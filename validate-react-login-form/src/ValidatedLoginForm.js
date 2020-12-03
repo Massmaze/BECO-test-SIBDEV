@@ -1,8 +1,8 @@
 import React from "react";
-
+import logo from './sd-logo.png';
 import { Formik } from "formik";
 import * as EmailValidator from "email-validator";
-import * as Yup from "yup";
+
 
 const ValidatedLoginForm = () => (
   <Formik
@@ -47,7 +47,7 @@ const ValidatedLoginForm = () => (
       return (
         <div class="container">
             <div class="login-form__logo">
-                <img src="./img/login/sd-logo.png" alt="logo"/>
+                <img src={logo} alt="logo"/>
             </div>
             <h3>Вход</h3>
             <form onSubmit={handleSubmit} action="#" class="login-form">
